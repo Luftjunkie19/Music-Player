@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Own Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Spotify for the poorest</h1>
+
+    <div class="song-data">
+      <div class="image">
+        <img
+          src="https://cdn.bigfm.de/sites/default/files/styles/meta_image/public/scald/image/Capital-Bra-1-TEASER.png?itok=P2jXFfQS"
+        />
+      </div>
+      <div class="des">
+        <p class="artist">Capital Bra</p>
+        <p class="title">HALT DIE ZEIT AN</p>
+      </div>
+    </div>
+    <div class="player">
+      <audio
+        src="FARID BANG & CAPITAL BRA - HALT DIE ZEIT AN [official Video].mp4"
+      ></audio>
+
+      <div class="navigation">
+        <button class="btn control">
+          <i class="fas fa-play fa-2x"></i>
+        </button>
+        <button class="btn stop">
+          <i class="fas fa-stop fa-2x"></i>
+        </button>
+        <button class="btn repeat">
+          <i class="fas fa-repeat fa-2x"></i>
+        </button>
+
+        <div class="progress-time">
+          <input type="range" id="progrress" min="0" max="100" value="0" />
+          <div class="time">
+            <span class="time-show"></span>
+          </div>
+        </div>
+
+        <button class="btn volume">
+          <i class="fa fa-volume-up fa-2x"></i>
+        </button>
+
+        <div class="progress-volume">
+          <input
+            type="range"
+            id="progrress-volume"
+            min="0"
+            max="100"
+            value="100"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
